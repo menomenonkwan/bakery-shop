@@ -1,7 +1,7 @@
 @import "../../styles/variables.scss";
 
 .headline {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: lighter;
   margin: 30px 0;
   width: 90%;
@@ -24,6 +24,7 @@
   }
 
   &_image {
+    border-radius: 50%;
     height: 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -33,92 +34,128 @@
     transform: rotateX(7deg);
     transition: all 0.3s ease-in-out;
 
+    @include breakpoint(md) {
+      border-radius: 0;
+    }
+
     .image_content {
-      color: $light;
-      width: 100%;
-      height: 100%;
       display: grid;
       place-content: center;
-      opacity: 0;
+      width: 100%;
+      height: 100%;
+      color: $light;
+      background: linear-gradient(rgba($dark, 0.5), rgba($dark, 0.959));
       transition: all 0.3s ease;
+
+      @include breakpoint(md) {
+        opacity: 0;
+        background: unset;
+      }
 
       &::before {
         position: absolute;
         content: "";
         top: 10%;
-        left: 50%;
-        width: 0;
-        height: 0;
+        left: 10%;
+        width: 80%;
+        height: 2px;
         background: $pink;
-
         transition: all 0.5s;
+
+        @include breakpoint(md) {
+          left: 50%;
+          width: 0;
+          height: 0;
+        }
       }
 
       &::after {
         position: absolute;
         content: "";
         bottom: 10%;
-        left: 50%;
-        width: 0;
-        height: 0;
+        left: 10%;
+        width: 80%;
+        height: 2px;
         background: $pink;
         transition: all 0.5s;
+
+        @include breakpoint(md) {
+          left: 50%;
+          width: 0;
+          height: 0;
+        }
       }
 
       h3 {
         padding: 10px 0;
-        font-size: 1.5em;
+        font-size: 2.5em;
         position: relative;
-        transform: translateY(-200%);
         transition: all 0.3s ease;
+
+        @include breakpoint(md) {
+          font-size: 1.5em;
+          transform: translateY(-200%);
+        }
       }
 
       .btn {
         position: relative;
         margin: 10px auto;
         width: fit-content;
-        transform: translateY(200%);
         transition: all 0.3s ease;
 
-        &:hover {
-          border-color: darken($pink, 20%);
-          background: rgba($light, 0.05);
-          color: $pink;
-          box-shadow: 0 0 15px rgba($light, 0.09);
+        border-color: darken($pink, 20%);
+        background: rgba($light, 0.05);
+        color: $pink;
+
+        @include breakpoint(md) {
+          border-color: unset;
+          background: unset;
+          color: $light;
+          transform: translateY(200%);
+
+          &:hover {
+            border-color: darken($pink, 20%);
+            background: rgba($light, 0.05);
+            color: $pink;
+            box-shadow: 0 0 15px rgba($light, 0.09);
+          }
         }
       }
     }
 
-    &:hover {
-      transform: rotate(0);
-      box-shadow: none;
-    }
-    &:hover .image_content {
-      opacity: 1;
-      background: rgba($dark, 0.9);
-
-      &::before {
-        left: 10%;
-        width: 80%;
-        height: 2px;
-        transform: translateX(0);
-        transition-delay: 0.2s;
+    @include breakpoint(md) {
+      &:hover {
+        transform: rotate(0);
+        box-shadow: none;
       }
+      &:hover .image_content {
+        opacity: 1;
+        background: rgba($dark, 0.9);
 
-      &::after {
-        left: 10%;
-        width: 80%;
-        height: 2px;
-        transform: translateX(0);
-        transition-delay: 0.2s;
-      }
+        &::before {
+          left: 10%;
+          width: 80%;
+          height: 2px;
+          transform: translateX(0);
+          transition-delay: 0.2s;
+        }
 
-      h3 {
-        transform: translateY(0);
-      }
+        &::after {
+          left: 10%;
+          width: 80%;
+          height: 2px;
+          transform: translateX(0);
+          transition-delay: 0.2s;
+        }
 
-      .btn {
-        transform: translateY(0);
+        h3 {
+          transform: translateY(0);
+        }
+
+        .btn {
+          transform: translateY(0);
+        }
       }
     }
   }

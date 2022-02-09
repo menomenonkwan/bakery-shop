@@ -1,0 +1,88 @@
+@import "../styles/variables.scss";
+
+.subscribe {
+  &_text {
+    width: 90%;
+
+    @include breakpoint(md) {
+      width: 80%;
+    }
+
+    h3 {
+      font-size: 2em;
+      position: relative;
+      margin: 5px 0;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -5px;
+        border-radius: 3px 50% 10px 5px;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(to right, rgba($pink, 0.35), transparent);
+      }
+    }
+    p {
+      font-weight: lighter;
+      font-size: 1.1em;
+      color: lighten($dark, 20%);
+    }
+  }
+
+  &_container {
+    width: 90%;
+    @include flex-container($direction: column);
+    margin: 20px 0;
+
+    @include breakpoint(md) {
+      margin: 40px 0;
+      width: 80%;
+      @include flex-container($justify: space-between);
+    }
+
+    &_social {
+      line-height: 1;
+      font-size: 1.65em;
+      color: $light;
+      margin-bottom: 40px;
+
+      @include breakpoint(md) {
+        margin-bottom: unset;
+      }
+
+      svg {
+        margin-right: 10px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: darken($pink, 15%);
+        }
+      }
+    }
+    input {
+      border-radius: 10px 0 0 10px;
+      width: 400px;
+      height: 100%;
+      font-family: inherit;
+      padding: 10px 15px;
+      font-weight: lighter;
+      border: 2px solid darken($pink, 10%);
+      box-shadow: $bs;
+
+      &:focus {
+        box-shadow: none;
+        outline: none !important;
+        border-color: $blue;
+      }
+    }
+    button {
+      border: 2px solid darken($pink, 10%);
+      color: lighten($dark, 20%);
+      border-radius: 0 10px 10px 0;
+      box-shadow: $bs;
+    }
+  }
+}

@@ -10,7 +10,32 @@
     &_brand {
       font-family: $titleFont;
       font-size: 3em;
-      color: $pink;
+      position: relative;
+
+      a {
+        color: $pink;
+        position: relative;
+        z-index: 1;
+      }
+
+      h6 {
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        text-align: right;
+        left: 0;
+        bottom: 40%;
+        right: -20%;
+        font-size: 0.65em;
+        padding: 0 5px;
+        background: linear-gradient(
+          45deg,
+          rgba($blue, 0.07) 30%,
+          rgba($blue, 0.35)
+        );
+        font-family: $primaryFont;
+        cursor: context-menu;
+      }
     }
 
     &_nav {

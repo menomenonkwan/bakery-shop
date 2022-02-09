@@ -1,0 +1,46 @@
+@import "../../styles/variables.scss";
+
+.about {
+  background: $blue;
+
+  &_container {
+    width: 90%;
+    @include flex-container($direction: column);
+
+    @include breakpoint(md) {
+      @include flex-container();
+      width: 80%;
+    }
+
+    h3 {
+      color: $light;
+      font-size: 3em;
+      font-weight: normal;
+      margin-bottom: 5px;
+      text-shadow: $ts;
+    }
+
+    &_content {
+      @include flex-container($direction: column, $align: flex-start);
+      margin-right: 40px;
+
+      &_text {
+        font-size: 1.15em;
+        font-weight: normal;
+
+        p {
+          margin-bottom: 20px;
+        }
+      }
+
+      &_image {
+        perspective: 400px;
+        img {
+          transform: rotateY(-5deg) rotateX(5deg);
+          width: 300px;
+          box-shadow: $bs;
+        }
+      }
+    }
+  }
+}

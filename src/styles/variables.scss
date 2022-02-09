@@ -9,11 +9,12 @@ $dark: rgb(24, 24, 24);
 $beige: rgb(182, 164, 152);
 // $purple: rgb(162, 162, 246);
 $pink: rgb(255, 105, 180);
+$blue: #719ece;
 
 // boxes
 $bs: 0 3px 6px rgba(0, 0, 0, 0.09);
 $ts: 0 2px 4px rgba(0, 0, 0, 0.09);
-$br: 5px;
+$br: 3px;
 
 // mixins
 @mixin flex-container($direction: row, $justify: center, $align: center) {
@@ -24,8 +25,21 @@ $br: 5px;
 }
 
 @mixin breakpoint($size) {
+  @if $size == sm {
+    // 480px
+    @media (min-width: 30em) {
+      @content;
+    }
+  }
   @if $size == md {
+    // 768px
     @media (min-width: 48em) {
+      @content;
+    }
+  }
+  @if $size == lg {
+    // 1024px
+    @media (min-width: 64em) {
       @content;
     }
   }

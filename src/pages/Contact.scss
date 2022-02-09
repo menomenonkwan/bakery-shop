@@ -1,0 +1,90 @@
+@import "../styles/variables.scss";
+
+.contact {
+  // height: 100%;
+
+  flex: 1;
+  &_heading {
+    // background: white;
+    text-align: left;
+    width: 90%;
+    padding: 5px;
+    max-width: 600px;
+    margin-bottom: 25px;
+
+    h1 {
+      font-size: 2.1em;
+    }
+    h3 {
+      // font-weight: normal;
+      font-size: 1.55em;
+      color: $light;
+      font-weight: normal;
+      padding: 2px 8px;
+      background: darken($pink, 10%);
+      width: fit-content;
+      border: 2px solid darken($light, 20%);
+      border-radius: 0 20px 0 20px;
+      box-shadow: $bs;
+      margin-bottom: 5px;
+    }
+  }
+
+  &_form {
+    // border: 1px solid black;
+    padding: 5px;
+    // background: $pink;
+    width: 90%;
+    max-width: 600px;
+    @include flex-container($direction: column, $align: flex-start);
+
+    &_label {
+      // display: block;
+      // background: green;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    &_title {
+      display: block;
+      font-size: 1.1em;
+      font-weight: normal;
+      margin-bottom: 5px;
+    }
+
+    &_input {
+      // input {
+      width: 100%;
+      // width: 600px;
+      background: #fefefe;
+      border: 2px solid #fefefe;
+      border-radius: $br;
+      box-shadow: $bs;
+      font-family: inherit;
+      font-size: 1.1em;
+      font-weight: lighter;
+      padding: 5px 10px;
+      // display: block;
+      resize: vertical;
+
+      &:focus {
+        box-shadow: none;
+        outline: none !important;
+        border-color: $blue;
+      }
+    }
+    textarea {
+      // width: 600px;
+      height: 100px;
+    }
+    button {
+      margin: 20px auto;
+      text-transform: uppercase;
+      border-width: 2px;
+      font-weight: bold;
+      border-radius: $br;
+      font-size: 1.1em;
+      background: transparent;
+    }
+  }
+}

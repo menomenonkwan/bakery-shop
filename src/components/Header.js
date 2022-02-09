@@ -43,7 +43,10 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header_content">
-        <Link to="/" className="header_content_brand">SweetTreats</Link>
+        <div className="header_content_brand">
+          <Link to="/">SweetTreats</Link>
+          <h6>Bakery</h6>
+        </div>
         <nav className={`header_content_nav ${menuIsOpen ? 'isOpen' : ''}`}>
           <ul>
             <li>

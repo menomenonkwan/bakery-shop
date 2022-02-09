@@ -1,0 +1,9 @@
+@import "../../styles/variables.scss";
+
+.video_section {
+  padding: 0 5%;
+
+  @include breakpoint(sm) {
+    padding: 0;
+  }
+}

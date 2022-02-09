@@ -39,7 +39,7 @@ button {
 
 section {
   @include flex-container($direction: column);
-  padding: 50px 0;
+  padding: 60px 0;
 }
 
 footer {
@@ -67,4 +67,24 @@ footer {
   text-transform: uppercase;
   padding: 10px 15px;
   transition: all 0.2s ease-in-out;
+}
+
+button:disabled {
+  color: grey;
+  cursor: not-allowed;
+  border-color: grey;
+
+  &:hover {
+    box-shadow: none;
+    color: grey;
+    border-color: grey;
+  }
+}
+
+.error {
+  margin: 20px 0;
+  padding: 10px 5px;
+  color: rgb(187, 3, 3);
+  border: 2px solid rgb(187, 3, 3);
+  background: rgba(200, 5, 5, 0.1);
 }

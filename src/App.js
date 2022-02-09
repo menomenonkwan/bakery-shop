@@ -4,9 +4,9 @@ import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Layout from './components/Layout';
 import Home from './pages/home/Home';
 import Menu from "./pages/Menu";
-import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Store from "./pages/Store";
+import Story from "./pages/Story";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={ <Home /> } />
             <Route path="/our-menu" element={ <Menu /> } />
-            <Route path="/our-story" element={ <About /> } />
+            <Route path="/our-story" element={ <Story /> } />
             <Route path="/contact" element={ <Contact /> } />
             <Route path="/store" element={ <Store /> } />
             <Route path="/*" element={ <Navigate to="/" /> } />

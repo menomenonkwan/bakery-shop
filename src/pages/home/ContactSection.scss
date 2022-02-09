@@ -1,0 +1,92 @@
+@import "../../styles/variables.scss";
+
+.contact_section {
+  background: $light;
+  @include flex-container($direction: column);
+  padding: 0 5%;
+
+  @include breakpoint(md) {
+    @include flex-container();
+    padding: 50px 5%;
+  }
+  @include breakpoint(lg) {
+    padding: 50px 75px;
+  }
+
+  &_location {
+    flex: 2;
+    // border: 1px solid green;
+    padding-right: 100px;
+    margin-top: 50px;
+    align-self: start;
+    perspective: 400px;
+    margin-bottom: 25px;
+
+    @include breakpoint(lg) {
+      margin-bottom: unset;
+    }
+
+    h3 {
+      color: $blue;
+      font-size: 3em;
+      font-weight: normal;
+      margin-bottom: 5px;
+      text-shadow: $ts;
+    }
+
+    &_address {
+      margin: 20px 0 10px;
+      font-size: 1.25em;
+      font-weight: lighter;
+    }
+    &_phone {
+      font-size: 1.15em;
+      font-weight: lighter;
+    }
+    &_email {
+      margin: 10px 0;
+      font-size: 1.15em;
+      cursor: pointer;
+      position: relative;
+      padding: 5px 0;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -5px;
+        border-radius: 3px 50% 10px 5px;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba($pink, 0.5), transparent);
+      }
+    }
+    img {
+      margin: 0 auto;
+      width: 350px;
+      transform: translateY(0) translateX(15%) rotateZ(-5deg) rotateY(5deg)
+        rotateX(-5deg);
+      box-shadow: 5px 10px 15px rgba($dark, 0.25);
+      align-self: center;
+      justify-self: center;
+      text-align: center;
+
+      @include breakpoint(md) {
+        transform: translateY(25%) translateX(35%) rotateZ(-5deg) rotateY(5deg);
+      }
+    }
+  }
+
+  button {
+    border-color: $pink;
+    color: $pink;
+    box-shadow: $bs;
+
+    &:hover {
+      border-color: darken($pink, 10%);
+      background: rgba($dark, 0.05);
+      color: darken($pink, 10%);
+      box-shadow: none;
+    }
+  }
+}
