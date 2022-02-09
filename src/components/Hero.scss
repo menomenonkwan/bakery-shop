@@ -1,0 +1,104 @@
+@import "../styles/variables.scss";
+
+.hero {
+  background: #aeaeae;
+  height: 75vh;
+  position: relative;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include breakpoint(md) {
+    height: 50vh;
+  }
+
+  &_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    background: linear-gradient(
+      to right,
+      rgba($dark, 0.6),
+      rgba($dark, 0.5),
+      rgba($dark, 0.1)
+    );
+    color: $light;
+
+    &_content {
+      @include flex-container($direction: column, $align: flex-start);
+      width: 90%;
+      margin: auto;
+
+      @include breakpoint(md) {
+        width: 70%;
+      }
+
+      h1 {
+        font-size: 4.25em;
+        font-weight: normal;
+      }
+      p {
+        font-size: 2.25em;
+        font-weight: lighter;
+
+        @include breakpoint(md) {
+          margin-top: -5px;
+        }
+      }
+
+      &_controls {
+        margin-top: 50px;
+        width: 100%;
+        @include flex-container($direction: column);
+
+        @include breakpoint(md) {
+          @include flex-container($direction: row);
+          margin-top: 25px;
+          width: unset;
+        }
+
+        a {
+          width: 40%;
+          text-align: center;
+          background: $pink;
+          color: $dark;
+          border: 1px solid $pink;
+          font-size: 1em;
+          text-transform: uppercase;
+          border-radius: $br;
+          padding: 10px 15px;
+          transition: all 0.2s ease-in-out;
+
+          @include breakpoint(md) {
+            width: unset;
+          }
+
+          &:hover {
+            background: darken($pink, 10%);
+            box-shadow: 0 0 10px rgba($light, 0.65);
+          }
+
+          &:last-of-type {
+            margin-top: 20px;
+            background: rgba($dark, 0.6);
+            color: $light;
+            border-color: $pink;
+
+            @include breakpoint(md) {
+              margin-left: 10px;
+              margin-top: unset;
+            }
+
+            &:hover {
+              background-color: rgba($dark, 0.75);
+            }
+          }
+        }
+      }
+    }
+  }
+}

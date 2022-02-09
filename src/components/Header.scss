@@ -1,0 +1,136 @@
+@import "../styles/variables.scss";
+
+.header {
+  background: $dark;
+
+  &_content {
+    padding: 10px 20px;
+    @include flex-container($justify: space-between);
+
+    &_brand {
+      font-family: $titleFont;
+      font-size: 3em;
+      color: $pink;
+    }
+
+    &_nav {
+      @include flex-container(
+        $direction: column,
+        $justify: flex-start,
+        $align: flex-start
+      );
+      padding-left: 25%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba($dark, 0.975);
+      transform: translateX(-100%);
+      opacity: 0;
+      z-index: 111;
+      transition: transform 0.25s ease-in-out;
+
+      &.isOpen {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      @include breakpoint(md) {
+        @include flex-container();
+        padding: unset;
+        position: static;
+        background: transparent;
+        width: auto;
+        height: 100%;
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      ul {
+        @include flex-container($direction: column);
+        font-size: 2em;
+        margin-top: 20vh;
+
+        @include breakpoint(md) {
+          @include flex-container();
+          font-size: 1em;
+          margin-top: unset;
+        }
+
+        li {
+          width: 100%;
+          margin-bottom: 40px;
+
+          @include breakpoint(md) {
+            margin-bottom: unset;
+          }
+
+          a {
+            text-align: left;
+            border-radius: $br;
+
+            color: $light;
+            font-weight: lighter;
+            transition: all 0.2s ease;
+
+            @include breakpoint(md) {
+              margin-right: 5px;
+              padding: 7px 14px;
+              height: 100%;
+            }
+
+            &:hover {
+              color: darken($pink, 30%);
+            }
+            &:active {
+              background: linear-gradient(rgba($pink, 0.15), rgba($pink, 0.05));
+            }
+
+            &.active {
+              color: $pink;
+              position: relative;
+
+              &::after {
+                position: absolute;
+                content: "";
+                width: 80%;
+                height: 1px;
+                background: darken($pink, 25%);
+                bottom: 5px;
+                left: 10%;
+
+                @include breakpoint(md) {
+                  bottom: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    button {
+      margin: 10px 0;
+      font-size: 2.15em;
+
+      @include breakpoint(md) {
+        margin: unset;
+        font-size: unset;
+      }
+    }
+
+    // mobile navigation menu
+    &_toggle {
+      @include flex-container();
+      color: $light;
+      cursor: pointer;
+      font-size: 2rem;
+      position: relative;
+
+      @include breakpoint(md) {
+        display: none;
+      }
+    }
+  }
+}

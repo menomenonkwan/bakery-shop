@@ -1,0 +1,54 @@
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background: $purple;
+  font-family: $primaryFont;
+  @include flex-container($direction: column, $align: unset);
+  width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  padding: 10px 15px;
+  background: rgba($light, 0.09);
+  border: 1px solid $light;
+  color: $light;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: rgba($pink, 0.09);
+    box-shadow: 0 0 10px rgba($light, 0.65);
+  }
+}
+
+footer {
+  font-weight: lighter;
+  font-size: 0.85em;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.container {
+  flex: 1;
+  @include flex-container(
+    $direction: column,
+    $justify: flex-start,
+    $align: stretch
+  );
+}
