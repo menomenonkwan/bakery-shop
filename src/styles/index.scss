@@ -7,7 +7,7 @@
 }
 
 .App {
-  background: $purple;
+  background: $beige;
   font-family: $primaryFont;
   @include flex-container($direction: column, $align: unset);
   width: 100%;
@@ -37,6 +37,11 @@ button {
   }
 }
 
+section {
+  @include flex-container($direction: column);
+  padding: 50px 0;
+}
+
 footer {
   font-weight: lighter;
   font-size: 0.85em;
@@ -51,4 +56,15 @@ footer {
     $justify: flex-start,
     $align: stretch
   );
+}
+
+.btn {
+  color: $light;
+  border: 1px solid $light;
+  text-align: center;
+  border-radius: $br;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  transition: all 0.2s ease-in-out;
 }

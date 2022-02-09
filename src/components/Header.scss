@@ -63,13 +63,13 @@
           margin-bottom: 40px;
 
           @include breakpoint(md) {
+            width: unset;
             margin-bottom: unset;
           }
 
           a {
             text-align: left;
             border-radius: $br;
-
             color: $light;
             font-weight: lighter;
             transition: all 0.2s ease;
@@ -127,6 +127,7 @@
       cursor: pointer;
       font-size: 2rem;
       position: relative;
+      z-index: 222;
 
       @include breakpoint(md) {
         display: none;

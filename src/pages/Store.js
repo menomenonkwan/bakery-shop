@@ -1,8 +1,10 @@
 
 export default function Store() {
   return (
-    <div>
+    <section>
       <h1>StorePage</h1>
-    </div>
+      <p>link to menu</p>
+      <p>cart section</p>
+    </section>
   );
 }

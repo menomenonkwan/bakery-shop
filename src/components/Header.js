@@ -47,18 +47,18 @@ export default function Header() {
         <nav className={`header_content_nav ${menuIsOpen ? 'isOpen' : ''}`}>
           <ul>
             <li>
-              <NavLink to="/page-one" onClick={handleMenuToggle}>
-                PageOne
+              <NavLink to="/our-menu" onClick={handleMenuToggle}>
+                Our Menu
               </NavLink>
             </li>
             <li>
-              <NavLink to="/page-two" onClick={handleMenuToggle}>
-                PageTwo
+              <NavLink to="/our-story" onClick={handleMenuToggle}>
+                Our Story
               </NavLink>
             </li>
             <li>
-              <NavLink to="/page-three" onClick={handleMenuToggle}>
-                PageThree
+              <NavLink to="/contact" onClick={handleMenuToggle}>
+                Contact
               </NavLink>
             </li>
           </ul>

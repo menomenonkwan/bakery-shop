@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 // styles & images
 import './Hero.scss';
-import heroBG from '../assets/hero.jpg';
+import heroBG from '../../assets/hero.jpg';
 
 export default function Hero() {
   return (
