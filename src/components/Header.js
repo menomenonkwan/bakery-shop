@@ -5,6 +5,7 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import './Header.scss';
 import { BiMenuAltRight } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai';
+import { FaOpencart } from 'react-icons/fa';
 
 export default function Header() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -37,7 +38,7 @@ export default function Header() {
 
   const handleClick = () => {
     handleMenuToggle();
-    navigate("/store");
+    navigate("/cart");
   }
 
   return (
@@ -65,7 +66,7 @@ export default function Header() {
               </NavLink>
             </li>
           </ul>
-          <button onClick={handleClick}>Shop</button>
+          <button onClick={handleClick}>Cart <FaOpencart /></button>
         </nav>
 
         <div className="header_content_toggle">

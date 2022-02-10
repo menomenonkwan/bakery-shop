@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { menuItems } from '../../assets/content';
+import { menuItems } from '../assets/content';
 
 // styles
 import './TopItems.scss';
@@ -17,7 +17,7 @@ export default function TopItems() {
           >
             <div className="image_content">
               <h3>{item.title}</h3>
-              <Link to="/#" className='btn'>View</Link>
+              <Link to="#" className='btn'>View</Link>
             </div>
           </div>
         ))}

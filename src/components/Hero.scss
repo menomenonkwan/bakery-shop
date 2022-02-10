@@ -1,4 +1,4 @@
-@import "../../styles/variables.scss";
+@import "../styles/variables.scss";
 
 .hero {
   background: #aeaeae;
@@ -86,6 +86,7 @@
           border-radius: $br;
           padding: 10px 15px;
           transition: all 0.2s ease-in-out;
+          border-radius: 0 20px 0 20px;
 
           @include breakpoint(md) {
             width: unset;
@@ -99,7 +100,7 @@
           &:last-of-type {
             margin-top: 20px;
             background: rgba($dark, 0.6);
-            color: $light;
+            color: $pink;
             border-color: $pink;
 
             @include breakpoint(md) {

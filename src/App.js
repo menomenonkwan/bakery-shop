@@ -5,7 +5,7 @@ import Layout from './components/Layout';
 import Home from './pages/home/Home';
 import Menu from "./pages/Menu";
 import Contact from "./pages/Contact";
-import Store from "./pages/Store";
+import Cart from "./pages/Cart";
 import Story from "./pages/Story";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
             <Route path="/our-menu" element={ <Menu /> } />
             <Route path="/our-story" element={ <Story /> } />
             <Route path="/contact" element={ <Contact /> } />
-            <Route path="/store" element={ <Store /> } />
+            <Route path="/cart" element={ <Cart /> } />
             <Route path="/*" element={ <Navigate to="/" /> } />
           </Routes>
         </Layout>

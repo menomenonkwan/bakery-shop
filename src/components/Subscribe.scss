@@ -64,13 +64,20 @@
     }
     input {
       border-radius: 10px 0 0 10px;
-      width: 400px;
+
       height: 100%;
       font-family: inherit;
       padding: 10px 15px;
       font-weight: lighter;
       border: 2px solid darken($pink, 10%);
       box-shadow: $bs;
+
+      @include breakpoint(md) {
+        width: 300px;
+      }
+      @include breakpoint(lg) {
+        width: 400px;
+      }
 
       &:focus {
         box-shadow: none;
