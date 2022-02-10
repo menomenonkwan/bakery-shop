@@ -63,25 +63,6 @@ export default function Story() {
           </div>
         ))}
       </div>     
-      {/* <h2 className='story_title'>Meet The Team</h2>
-      <div className='story_team'>
-        {team.map(member => (
-          <div key={member.id} className='story_team_member'>
-            <img src={member.image} alt={`${member.name} portrait`} />
-            <div className='story_team_member_bio'>
-              <h3>{member.name}</h3>
-              <h6>{member.city}</h6>
-              <p>{member.bio}</p>
-              <p>{member.email}</p>
-              <div className="story_social">
-                <FaFacebook />
-                <FaInstagram />
-                <FaTwitter />
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>      */}
     </section>
 
 
