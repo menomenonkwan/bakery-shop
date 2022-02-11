@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import { cupcakeOptions, menuHeroContent, cookieOptions,
   brownieOptions, 
   cakeOptions,
@@ -11,6 +10,7 @@ import TopItems from '../components/TopItems';
 import './Menu.scss';
 
 export default function Menu() {
+  
   return (
     <div>
       <Hero content={menuHeroContent} />

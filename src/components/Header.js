@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
+import { useCartContext } from '../hooks/useCartContext';
 
 // styles & icons
 import './Header.scss';
@@ -11,8 +12,10 @@ export default function Header() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const [screenWidth, setScreenWidth] = useState({
     width: undefined,
-  })
+  });
+  const { cart } = useCartContext();
   const navigate = useNavigate();
+
 
   useEffect(()=> {
     const handleResize = () => {
@@ -30,6 +33,12 @@ export default function Header() {
       setMenuIsOpen(false);
     }
   }, [screenWidth.width, menuIsOpen]);
+
+  const getTotalItems = () => {
+    return cart.reduce((theTotal, theItem) => {
+      return theTotal + theItem.amount;
+    }, 0);
+  }
 
   
   const handleMenuToggle = () => {
@@ -66,7 +75,12 @@ export default function Header() {
               </NavLink>
             </li>
           </ul>
-          <button onClick={handleClick}>Cart <FaOpencart /></button>
+          <div className="header_badge">
+            {cart.length > 0 && 
+            <div className="header_badge_notification"><p>{getTotalItems()}</p></div>
+            }
+            <button onClick={handleClick}>Cart <FaOpencart /></button>
+          </div>
         </nav>
 
         <div className="header_content_toggle">

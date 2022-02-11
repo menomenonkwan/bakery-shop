@@ -128,25 +128,25 @@ const cupcakeOptions = [
 
 const cookieOptions = [
   {
-    id: 1,
+    id: 11,
     title: 'Chocolate Chip',
     price: 199,
     image: 'https://source.unsplash.com/YUUaapeq5Zo/'
   },
   {
-    id: 2,
+    id: 22,
     title: 'Macaroons',
     price: 299,
     image: 'https://source.unsplash.com/5B-CcdKM9LA/'
   },
   {
-    id: 3,
+    id: 33,
     title: 'Minty Goodness',
     price: 299,
     image: 'https://source.unsplash.com/GbBQH_RQFcc/'
   },
   {
-    id: 4,
+    id: 44,
     title: 'Super Fudge',
     price: 199,
     image: 'https://source.unsplash.com/x6VuEH2npHw/'
@@ -155,25 +155,25 @@ const cookieOptions = [
 
 const brownieOptions = [
   {
-    id: 1,
+    id: 111,
     title: 'Raspberry Delight',
     price: 299,
     image: 'https://source.unsplash.com/uG1jwfpCRhg/'
   },
   {
-    id: 2,
+    id: 222,
     title: 'Walnut Surprise',
     price: 399,
     image: 'https://source.unsplash.com/WPRuXYLNY68/'
   },
   {
-    id: 3,
+    id: 333,
     title: 'Peanut Buttery',
     price: 299,
     image: 'https://source.unsplash.com/405IIp6oMl4/'
   },
   {
-    id: 4,
+    id: 444,
     title: 'Gluten Free',
     price: 499,
     image: 'https://source.unsplash.com/yRI0fojBUv8/'
@@ -182,25 +182,25 @@ const brownieOptions = [
 
 const donutOptions = [
   {
-    id: 1,
+    id: 1111,
     title: 'Mmm, Donut',
     price: 99,
     image: 'https://source.unsplash.com/EumgKI11Hns/'
   },
   {
-    id: 2,
+    id: 2222,
     title: 'Maple Powered',
     price: 159,
     image: 'https://source.unsplash.com/PSuWs98GZHA/'
   },
   {
-    id: 3,
+    id: 3333,
     title: 'Oreo Special',
     price: 299,
     image: 'https://source.unsplash.com/1qubXlkKnSM/'
   },
   {
-    id: 4,
+    id: 4444,
     title: 'Mint Donut',
     price: 159,
     image: 'https://source.unsplash.com/PIjUQFsg9Ms/'
@@ -209,25 +209,25 @@ const donutOptions = [
 
 const cakeOptions = [
   {
-    id: 1,
+    id: 11111,
     title: 'Pumpkin Spice',
     price: 2199,
     image: 'https://source.unsplash.com/Nl8Oa6ZuNcA/'
   },
   {
-    id: 2,
+    id: 22222,
     title: 'Chocolate Heaven',
     price: 1999,
     image: 'https://source.unsplash.com/wp4ZYmUuJBk/'
   },
   {
-    id: 3,
+    id: 33333,
     title: 'Banana & Vanilla',
     price: 1599,
     image: 'https://source.unsplash.com/8LtrMQfeDkQ/'
   },
   {
-    id: 4,
+    id: 44444,
     title: 'Mint Cake',
     price: 1899,
     image: 'https://source.unsplash.com/mlcm6qi9Bu8/'

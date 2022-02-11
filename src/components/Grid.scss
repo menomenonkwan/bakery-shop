@@ -38,8 +38,8 @@
       @include flex-container($direction: column, $align: flex-start);
       width: 100%;
       // border: 1px solid yellow;
-      padding: 10px;
-      margin-top: 10px;
+      padding: 20px 15px;
+      margin-top: 20px;
 
       h5 {
         font-size: 1em;
@@ -53,6 +53,7 @@
       }
 
       button {
+        @include flex-container();
         margin-top: auto;
         width: 100%;
         font-size: 0.8em;
@@ -60,10 +61,36 @@
         color: $dark;
         background: rgba($pink, 0.2);
 
+        span {
+          margin-left: 8px;
+          transition: all 0.5s ease-in-out;
+        }
+
         &:hover {
           background: rgba($blue, 0.2);
         }
+        &:hover span {
+          transform: translateX(100%);
+        }
+        &:hover svg {
+          animation-duration: 0.6s;
+          animation-name: pulse;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
       }
     }
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    color: $dark;
+  }
+
+  to {
+    color: darken($pink, 30%);
+    transform: scale(1.5);
   }
 }
