@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/bakery-shop/static/css/main.695b0146.css",
+    "main.js": "/bakery-shop/static/js/main.49f8998c.js",
+    "reactPlayerYouTube.js": "/bakery-shop/static/js/reactPlayerYouTube.70b8c2a6.chunk.js",
+    "reactPlayerSoundCloud.js": "/bakery-shop/static/js/reactPlayerSoundCloud.51d1c13b.chunk.js",
+    "reactPlayerVimeo.js": "/bakery-shop/static/js/reactPlayerVimeo.1c11e988.chunk.js",
+    "reactPlayerFacebook.js": "/bakery-shop/static/js/reactPlayerFacebook.dbaf9928.chunk.js",
+    "reactPlayerStreamable.js": "/bakery-shop/static/js/reactPlayerStreamable.a3783d93.chunk.js",
+    "reactPlayerWistia.js": "/bakery-shop/static/js/reactPlayerWistia.f2eed52c.chunk.js",
+    "reactPlayerTwitch.js": "/bakery-shop/static/js/reactPlayerTwitch.2170324f.chunk.js",
+    "reactPlayerDailyMotion.js": "/bakery-shop/static/js/reactPlayerDailyMotion.cf58e8cf.chunk.js",
+    "reactPlayerMixcloud.js": "/bakery-shop/static/js/reactPlayerMixcloud.b505668d.chunk.js",
+    "reactPlayerVidyard.js": "/bakery-shop/static/js/reactPlayerVidyard.c9343350.chunk.js",
+    "reactPlayerKaltura.js": "/bakery-shop/static/js/reactPlayerKaltura.868eebe9.chunk.js",
+    "reactPlayerFilePlayer.js": "/bakery-shop/static/js/reactPlayerFilePlayer.e7098039.chunk.js",
+    "reactPlayerPreview.js": "/bakery-shop/static/js/reactPlayerPreview.cc3ebaf8.chunk.js",
+    "static/media/hero.jpg": "/bakery-shop/static/media/hero.2c3e02b4bfadae60652e.jpg",
+    "static/media/hero_menu.jpg": "/bakery-shop/static/media/hero_menu.c4a807005b4827653e1b.jpg",
+    "static/media/hero_story.jpg": "/bakery-shop/static/media/hero_story.bfdd88a304958fa3b7a4.jpg",
+    "index.html": "/bakery-shop/index.html",
+    "main.695b0146.css.map": "/bakery-shop/static/css/main.695b0146.css.map",
+    "main.49f8998c.js.map": "/bakery-shop/static/js/main.49f8998c.js.map",
+    "reactPlayerYouTube.70b8c2a6.chunk.js.map": "/bakery-shop/static/js/reactPlayerYouTube.70b8c2a6.chunk.js.map",
+    "reactPlayerSoundCloud.51d1c13b.chunk.js.map": "/bakery-shop/static/js/reactPlayerSoundCloud.51d1c13b.chunk.js.map",
+    "reactPlayerVimeo.1c11e988.chunk.js.map": "/bakery-shop/static/js/reactPlayerVimeo.1c11e988.chunk.js.map",
+    "reactPlayerFacebook.dbaf9928.chunk.js.map": "/bakery-shop/static/js/reactPlayerFacebook.dbaf9928.chunk.js.map",
+    "reactPlayerStreamable.a3783d93.chunk.js.map": "/bakery-shop/static/js/reactPlayerStreamable.a3783d93.chunk.js.map",
+    "reactPlayerWistia.f2eed52c.chunk.js.map": "/bakery-shop/static/js/reactPlayerWistia.f2eed52c.chunk.js.map",
+    "reactPlayerTwitch.2170324f.chunk.js.map": "/bakery-shop/static/js/reactPlayerTwitch.2170324f.chunk.js.map",
+    "reactPlayerDailyMotion.cf58e8cf.chunk.js.map": "/bakery-shop/static/js/reactPlayerDailyMotion.cf58e8cf.chunk.js.map",
+    "reactPlayerMixcloud.b505668d.chunk.js.map": "/bakery-shop/static/js/reactPlayerMixcloud.b505668d.chunk.js.map",
+    "reactPlayerVidyard.c9343350.chunk.js.map": "/bakery-shop/static/js/reactPlayerVidyard.c9343350.chunk.js.map",
+    "reactPlayerKaltura.868eebe9.chunk.js.map": "/bakery-shop/static/js/reactPlayerKaltura.868eebe9.chunk.js.map",
+    "reactPlayerFilePlayer.e7098039.chunk.js.map": "/bakery-shop/static/js/reactPlayerFilePlayer.e7098039.chunk.js.map",
+    "reactPlayerPreview.cc3ebaf8.chunk.js.map": "/bakery-shop/static/js/reactPlayerPreview.cc3ebaf8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.695b0146.css",
+    "static/js/main.49f8998c.js"
+  ]
+}
