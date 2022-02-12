@@ -16,11 +16,11 @@ function App() {
         <Layout>
           <Routes>
             <Route path="bakery-shop/" element={ <Home /> } />
-            <Route path="bakery-shop/our-menu" element={ <Menu /> } />
-            <Route path="bakery-shop/our-story" element={ <Story /> } />
-            <Route path="bakery-shop/contact" element={ <Contact /> } />
-            <Route path="bakery-shop/cart" element={ <Cart /> } />
-            <Route path="bakery-shop/*" element={ <Navigate to="/" /> } />
+            <Route path="/our-menu" element={ <Menu /> } />
+            <Route path="/our-story" element={ <Story /> } />
+            <Route path="/contact" element={ <Contact /> } />
+            <Route path="/cart" element={ <Cart /> } />
+            <Route path="/*" element={ <Navigate to="/" /> } />
           </Routes>
         </Layout>
       </BrowserRouter>

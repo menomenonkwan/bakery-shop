@@ -54,7 +54,7 @@ export default function Header() {
     <header className="header">
       <div className="header_content">
         <div className="header_content_brand">
-          <Link to="/">SweetTreats</Link>
+          <Link to="bakery-shop/">SweetTreats</Link>
           <h6>Bakery</h6>
         </div>
         <nav className={`header_content_nav ${menuIsOpen ? 'isOpen' : ''}`}>
