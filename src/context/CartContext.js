@@ -10,6 +10,8 @@ const cartReducer = ( state, action ) => {
       return { ...state, cart: action.payload }
     case 'DELETE_ITEM':
       return { ...state, cart: action.payload }
+    case 'EMPTY_ALL_ITEMS':
+      return { ...state, cart: action.payload }
     default:
       return state;
   }
@@ -58,8 +60,12 @@ export const CartContextProvider = ({ children }) => {
     dispatch({ type: 'DELETE_ITEM', payload: updatedCart })
   }
 
+  const emptyCart = () => {
+    dispatch({ type: 'EMPTY_ALL_ITEMS', payload: [] })
+  }
+
   return (
-    <CartContext.Provider value={{ ...state, addToCart, removeFromCart, deleteFromCart }}>
+    <CartContext.Provider value={{ ...state, addToCart, removeFromCart, deleteFromCart, emptyCart }}>
       { children }
     </CartContext.Provider>
   )

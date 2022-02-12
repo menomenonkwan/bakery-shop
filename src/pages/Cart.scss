@@ -1,0 +1,185 @@
+@import "../styles/variables.scss";
+
+.cart_page {
+  background: $light;
+  box-shadow: $bs;
+  width: 100%;
+  border-radius: $br;
+  padding: 40px;
+
+  @include breakpoint(md) {
+    margin: 40px auto;
+    width: 90%;
+  }
+
+  &_heading {
+    width: 100%;
+    @include flex-container($direction: column, $align: flex-start);
+    border: 5px solid darken($beige, 10%);
+    background: $beige;
+    padding: 3px 8px;
+    box-shadow: $bs;
+    border-radius: $br;
+
+    @include breakpoint(md) {
+      @include flex-container($justify: space-between);
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+    a {
+      display: none;
+
+      @include breakpoint(md) {
+        font-size: 0.9em;
+        color: $light;
+        transition: all 0.3s ease;
+        display: block;
+      }
+
+      &:hover {
+        color: darken($light, 10%);
+      }
+    }
+  }
+}
+
+.cart {
+  width: 100%;
+  // border: 1px solid black;
+  @include flex-container(
+    $direction: column,
+    $align: stretch,
+    $justify: space-between
+  );
+
+  @include breakpoint(md) {
+    @include flex-container(
+      $direction: row,
+      $align: flex-start,
+      $justify: space-between
+    );
+  }
+  &_list {
+    // border: 1px solid yellow;
+    flex: 2;
+    margin-top: 20px;
+
+    &_card {
+      background: lighten($light, 5%);
+      border-left: 8px solid lighten($pink, 20%);
+      border-top: 1px solid lighten($pink, 20%);
+      box-shadow: $bs;
+      border-radius: $br;
+      margin-bottom: 20px;
+      padding: 20px;
+      @include flex-container(
+        $direction: column,
+        // $justify: flex-start,
+        // $align: stretch
+      );
+
+      @include breakpoint(md) {
+        @include flex-container($justify: flex-start, $align: stretch);
+      }
+
+      &_info {
+        flex: 1;
+        line-height: 1;
+        padding: 10px;
+        // height: 100%;
+        margin-right: auto;
+        @include flex-container(
+          $direction: column,
+          $align: flex-start,
+          $justify: flex-start
+        );
+
+        @include breakpoint(md) {
+          margin-right: unset;
+          @include flex-container($direction: column, $align: flex-start);
+        }
+
+        h3 {
+          font-size: 1.45em;
+        }
+        p {
+          font-size: 1.25em;
+          &:last-of-type {
+            font-weight: lighter;
+            color: $pink;
+            justify-self: flex-end;
+            margin-top: 20px;
+            font-size: 1.35em;
+
+            @include breakpoint(md) {
+              margin-top: auto;
+            }
+          }
+        }
+      }
+      img {
+        width: 100%;
+        max-height: 300px;
+        box-shadow: $bs;
+
+        @include breakpoint(md) {
+          width: 200px;
+        }
+      }
+      &_controls {
+        width: 100%;
+        @include flex-container($justify: space-between);
+        margin-top: 20px;
+
+        @include breakpoint(md) {
+          width: unset;
+          margin-top: unset;
+          padding: 4px;
+          line-height: 1;
+          @include flex-container($direction: column);
+        }
+        button {
+          &:last-of-type {
+            margin-left: auto;
+          }
+        }
+        svg {
+          color: $pink;
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+
+  &_checkout {
+    flex: 1;
+    text-align: end;
+    padding: 20px;
+
+    h3 {
+      font-weight: lighter;
+      font-size: 2.5em;
+    }
+
+    button {
+      background: $pink;
+      box-shadow: $bs;
+      margin: 20px 0;
+      transition: all 0.3s ease;
+      border-color: $pink;
+
+      &:hover {
+        box-shadow: none;
+        background: darken($pink, 10%);
+      }
+    }
+  }
+}
+
+.empty {
+  font-size: 1.5em;
+  padding: 60px;
+  font-weight: lighter;
+}

@@ -17,7 +17,7 @@ export default function TopItems({ id = null }) {
           >
             <div className="image_content">
               <h3>{item.title}</h3>
-              <Link to="#" className='btn'>View</Link>
+              <a href={item.link} className='btn'>View</a>
             </div>
           </div>
         ))}
