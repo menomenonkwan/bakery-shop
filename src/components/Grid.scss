@@ -9,7 +9,6 @@
   gap: 30px;
 
   &_item {
-    // border: 1px solid red;
     @include flex-container($direction: column);
     background: lighten($beige, 10%);
     box-shadow: $bs;
@@ -25,7 +24,6 @@
     }
 
     img {
-      // max-width: 300px;
       position: relative;
       width: 100%;
       box-shadow: $bs;
@@ -37,7 +35,6 @@
       flex: 1;
       @include flex-container($direction: column, $align: flex-start);
       width: 100%;
-      // border: 1px solid yellow;
       padding: 20px 15px;
       margin-top: 20px;
 
@@ -54,6 +51,7 @@
 
       button {
         @include flex-container();
+        font-weight: bold;
         margin-top: auto;
         width: 100%;
         font-size: 0.8em;
@@ -61,36 +59,10 @@
         color: $dark;
         background: rgba($pink, 0.2);
 
-        span {
-          margin-left: 8px;
-          transition: all 0.5s ease-in-out;
-        }
-
         &:hover {
           background: rgba($blue, 0.2);
         }
-        &:hover span {
-          transform: translateX(100%);
-        }
-        &:hover svg {
-          animation-duration: 0.6s;
-          animation-name: pulse;
-          animation-iteration-count: infinite;
-          animation-direction: alternate;
-        }
       }
     }
-  }
-}
-
-@keyframes pulse {
-  from {
-    transform: scale(1);
-    color: $dark;
-  }
-
-  to {
-    color: darken($pink, 30%);
-    transform: scale(1.5);
   }
 }

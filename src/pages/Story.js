@@ -1,10 +1,10 @@
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { storyHeroContent, storyContent } from '../assets/content';
 import Hero from '../components/Hero';
 import Subscribe from '../components/Subscribe';
 
-// styles
+// styles & icons
 import './Story.scss';
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 export default function Story() {
   const { images, text, team } = storyContent;
@@ -48,7 +48,6 @@ export default function Story() {
         {team.map(member => (
           <div key={member.id} className='story_team_member'>
             <div style={{ backgroundImage: `url(${member.image})`, backgroundPosition: `${member.img_position}`}} className="story_team_member_image"></div>
-            {/* <img src={member.image} alt={`${member.name} portrait`} /> */}
             <div className='story_team_member_bio'>
               <h3>{member.name}</h3>
               <h6>{member.city}</h6>

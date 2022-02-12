@@ -18,11 +18,15 @@
       font-weight: normal;
       margin-bottom: 5px;
       text-shadow: $ts;
+
+      &:last-of-type {
+        margin-bottom: 25px;
+      }
     }
 
     &_content {
       @include flex-container($direction: column, $align: flex-start);
-      margin-right: 40px;
+      margin-right: 10%;
 
       &_text {
         font-size: 1.15em;
@@ -30,11 +34,13 @@
 
         p {
           margin-bottom: 20px;
+          line-height: 1.25;
         }
       }
 
       &_image {
         perspective: 400px;
+        margin-bottom: 40px;
         img {
           transform: rotateY(-5deg) rotateX(5deg);
           width: 300px;

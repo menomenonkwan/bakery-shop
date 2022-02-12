@@ -47,7 +47,6 @@
 
 .cart {
   width: 100%;
-  // border: 1px solid black;
   @include flex-container(
     $direction: column,
     $align: stretch,
@@ -62,7 +61,6 @@
     );
   }
   &_list {
-    // border: 1px solid yellow;
     flex: 2;
     margin-top: 20px;
 
@@ -74,11 +72,7 @@
       border-radius: $br;
       margin-bottom: 20px;
       padding: 20px;
-      @include flex-container(
-        $direction: column,
-        // $justify: flex-start,
-        // $align: stretch
-      );
+      @include flex-container($direction: column);
 
       @include breakpoint(md) {
         @include flex-container($justify: flex-start, $align: stretch);
@@ -88,7 +82,6 @@
         flex: 1;
         line-height: 1;
         padding: 10px;
-        // height: 100%;
         margin-right: auto;
         @include flex-container(
           $direction: column,
@@ -106,6 +99,7 @@
         }
         p {
           font-size: 1.25em;
+          font-family: $secondaryFont;
           &:last-of-type {
             font-weight: lighter;
             color: $pink;

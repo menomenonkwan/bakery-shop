@@ -1,11 +1,8 @@
 @import "../styles/variables.scss";
 
 .contact {
-  // height: 100%;
-
   flex: 1;
   &_heading {
-    // background: white;
     text-align: left;
     width: 90%;
     padding: 5px;
@@ -16,7 +13,6 @@
       font-size: 2.1em;
     }
     h3 {
-      // font-weight: normal;
       font-size: 1.55em;
       color: $light;
       font-weight: normal;
@@ -31,16 +27,12 @@
   }
 
   &_form {
-    // border: 1px solid black;
     padding: 5px;
-    // background: $pink;
     width: 90%;
     max-width: 600px;
     @include flex-container($direction: column, $align: flex-start);
 
     &_label {
-      // display: block;
-      // background: green;
       width: 100%;
       margin-bottom: 20px;
     }
@@ -53,9 +45,7 @@
     }
 
     &_input {
-      // input {
       width: 100%;
-      // width: 600px;
       background: #fefefe;
       border: 2px solid #fefefe;
       border-radius: $br;
@@ -64,7 +54,6 @@
       font-size: 1.1em;
       font-weight: lighter;
       padding: 5px 10px;
-      // display: block;
       resize: vertical;
 
       &:focus {
@@ -74,7 +63,6 @@
       }
     }
     textarea {
-      // width: 600px;
       height: 100px;
     }
     button {

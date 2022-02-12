@@ -6,9 +6,6 @@ import ContactSection from "./ContactSection";
 import Subscribe from "../../components/Subscribe";
 import { homeHeroContent } from "../../assets/content";
 
-// styles & images
-import './Home.scss';
-
 export default function Home() {
   return (
     <div>

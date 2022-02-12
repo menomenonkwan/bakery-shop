@@ -2,7 +2,6 @@ import { useCartContext } from '../hooks/useCartContext';
 
 // styles & icons
 import './Grid.scss';
-import { FaHandPointRight } from 'react-icons/fa';
 
 const calculateMoney = (amount) => {
   return (amount * 0.01).toFixed(2);
@@ -19,7 +18,7 @@ export default function Grid({ content }) {
           <div className="grid_container_item_info">
             <h5>{item.title}</h5>
             <p>${calculateMoney(item.price)}</p>
-            <button className='btn' onClick={() => addToCart(item)}>Add One <span><FaHandPointRight /></span></button>
+            <button className='btn' onClick={() => addToCart(item)}>Add One</button>
           </div>
         </div>
       ))}           
