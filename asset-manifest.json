@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bakery-shop/static/css/main.695b0146.css",
-    "main.js": "/bakery-shop/static/js/main.17be1817.js",
+    "main.js": "/bakery-shop/static/js/main.8d360eed.js",
     "reactPlayerYouTube.js": "/bakery-shop/static/js/reactPlayerYouTube.70b8c2a6.chunk.js",
     "reactPlayerSoundCloud.js": "/bakery-shop/static/js/reactPlayerSoundCloud.51d1c13b.chunk.js",
     "reactPlayerVimeo.js": "/bakery-shop/static/js/reactPlayerVimeo.1c11e988.chunk.js",
@@ -20,7 +20,7 @@
     "static/media/hero_story.jpg": "/bakery-shop/static/media/hero_story.bfdd88a304958fa3b7a4.jpg",
     "index.html": "/bakery-shop/index.html",
     "main.695b0146.css.map": "/bakery-shop/static/css/main.695b0146.css.map",
-    "main.17be1817.js.map": "/bakery-shop/static/js/main.17be1817.js.map",
+    "main.8d360eed.js.map": "/bakery-shop/static/js/main.8d360eed.js.map",
     "reactPlayerYouTube.70b8c2a6.chunk.js.map": "/bakery-shop/static/js/reactPlayerYouTube.70b8c2a6.chunk.js.map",
     "reactPlayerSoundCloud.51d1c13b.chunk.js.map": "/bakery-shop/static/js/reactPlayerSoundCloud.51d1c13b.chunk.js.map",
     "reactPlayerVimeo.1c11e988.chunk.js.map": "/bakery-shop/static/js/reactPlayerVimeo.1c11e988.chunk.js.map",
@@ -37,6 +37,6 @@
   },
   "entrypoints": [
     "static/css/main.695b0146.css",
-    "static/js/main.17be1817.js"
+    "static/js/main.8d360eed.js"
   ]
 }
