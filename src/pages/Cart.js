@@ -49,7 +49,7 @@ export default function Cart() {
     
     setTimeout(() => {
       emptyCart();
-      navigate('bakery-shop/');
+      navigate('/bakery-shop/');
     }, 2500);
   }
 
